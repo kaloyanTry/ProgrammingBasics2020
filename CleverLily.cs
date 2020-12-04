@@ -27,6 +27,7 @@ namespace _4._2.ForLoops
                 }
                 else toys++;
             }
+            
             sumToys = priceToys * toys;
             sum += sumToys;
 
