@@ -24,6 +24,7 @@ namespace _5._3.Cake
                 }
                 command = Console.ReadLine();
             }
+            
             if (command == "STOP")
             {
                 Console.WriteLine($"{piecesCake - totalCake} pieces are left.");
