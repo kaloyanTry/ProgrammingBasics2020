@@ -10,6 +10,7 @@ namespace _2._3.ConditionsLab2
             double size = double.Parse(Console.ReadLine());
             string inMetric = Console.ReadLine();
             string outMetric = Console.ReadLine();
+            
             double meter = 0.0;
             double result = 0.0;
 
