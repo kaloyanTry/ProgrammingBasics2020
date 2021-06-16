@@ -19,18 +19,21 @@ namespace Excursion
             while (true)
             {
                 command = Console.ReadLine();
+                
                 if (command == "Stop") break;
 
                 if (command == "sea")
                 {
                     priceSeaTotal += priceSea;
                     numSea--;
+                    
                     if (numSea <= 0) priceSea = 0;
                 }
                 else if (command == "mountain")
                 {
                     priceMountainTotal += priceMountain;
                     numMountain--;
+                    
                     if (numMountain <= 0) priceMountain = 0;
                 }
 
@@ -41,8 +44,8 @@ namespace Excursion
             {
                 Console.WriteLine("Good job! Everything is sold.");
             }
-            Console.WriteLine($"Profit: {priceMountainTotal + priceSeaTotal} leva.");
-          
+            
+            Console.WriteLine($"Profit: {priceMountainTotal + priceSeaTotal} leva.");       
         }
     }
 }
