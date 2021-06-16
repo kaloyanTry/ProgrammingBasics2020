@@ -10,6 +10,7 @@ namespace CatShirt
             double front = double.Parse(Console.ReadLine());
             string cloth = Console.ReadLine();
             string line = Console.ReadLine();
+            
             double priceCloth = 0.0D;
             double priceTotal = 0.0D;
 
@@ -25,6 +26,7 @@ namespace CatShirt
             
 
             priceTotal = size * priceCloth + 10;
+            
             if (line == "Yes") priceTotal = priceTotal + priceTotal * 0.2;
             else if (line == "No") priceTotal = priceTotal;
 
