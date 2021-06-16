@@ -7,6 +7,7 @@ namespace Airlines
         static void Main(string[] args)
         {
             int numberCompanies = int.Parse(Console.ReadLine());
+            
             double passengersPerFlight = 0;
             int counterPerFlight = 0;
             double maxFlight = 0;
@@ -20,6 +21,7 @@ namespace Airlines
                 while (command != "Stop")
                 {
                     command = Console.ReadLine();
+                    
                     if (command == "Finish") break;
                     
                     int passengers = int.Parse(command);
@@ -36,6 +38,7 @@ namespace Airlines
                     maxFlight = averagePassengers;
                     maxCompany = companyName;
                 }
+                
                 passengersPerFlight = 0;
                 counterPerFlight = 0;
             }
