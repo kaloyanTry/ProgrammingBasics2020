@@ -38,8 +38,8 @@ namespace CatLife
                         Console.WriteLine($"{cat} is invalid cat!");
                         break;
                 }
-
             }
+            
             if (gender == 'f')
             {
                 switch (cat)
@@ -66,8 +66,8 @@ namespace CatLife
                         Console.WriteLine($"{cat} is invalid cat!");
                         break;
                 }
-
             }
+            
             humanYears = catYears * 12;
             double catMonths = Math.Floor(humanYears / 6);
             if (isCat) Console.WriteLine($"{catMonths} cat months");
