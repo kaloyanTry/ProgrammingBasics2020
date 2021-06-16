@@ -7,6 +7,7 @@ namespace PassengerPerFlight
         static void Main(string[] args)
         {
             int numberAirlines = int.Parse(Console.ReadLine());
+            
             int passengersPerFlight = 0;
             double passengersAverage = 0;
             string airLine = "";
@@ -21,6 +22,7 @@ namespace PassengerPerFlight
                 while (command != "Finish" && counterAll <= numberAirlines)
                 {
                     if (command == "Finish") break;
+                    
                     else
                     {
                         int passengers = int.Parse(Console.ReadLine());
@@ -36,15 +38,14 @@ namespace PassengerPerFlight
                         passengersMax = passengersPerFlight;
                         airLineMax = airLine;
                     }
+                    
                     if (counterAll == numberAirlines) break;
                     command = Console.ReadLine();
-
-
                 }
                 Console.WriteLine($"{airLine}: {passengersPerFlight}passengers.");
             }
+            
             Console.WriteLine($"{airLineMax} has most passengers per flight: {passengersMax}");
-
         }
     }
 }
