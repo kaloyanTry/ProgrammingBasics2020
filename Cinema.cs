@@ -26,6 +26,7 @@ namespace _6._2.TicketsCinema
                 for (int i = 0; i < emptyPlaces; i++)
                 {
                     string movie = Console.ReadLine();
+                    
                     if (movie == "standard") counterStandard++;
                     if (movie == "student") counterStudent++;
                     if (movie == "kid") counterKid++;
@@ -40,6 +41,7 @@ namespace _6._2.TicketsCinema
             }
 
             totalAll = totalKid + totalStandart + totalStudent;
+            
             Console.WriteLine($"Total tickets: {totalAll}");
             Console.WriteLine($"{((totalStudent / totalAll) * 100):F2}% student tickets.");
             Console.WriteLine($"{((totalStandart / totalAll) * 100):F2}% standard tickets.");
